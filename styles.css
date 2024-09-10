@@ -1,0 +1,193 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #eaeaea; /* Light Gray */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #4b4b4b; /* Charcoal Gray */
+    color: #fff;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img {
+    height: 50px; /* Adjust the size of the logo */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.menu li {
+    position: relative; /* Needed for dropdown positioning */
+    margin: 0 15px; /* Add space between menu items */
+}
+
+nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+nav ul.menu li a:hover {
+    background-color: #6b6b6b; /* Slightly lighter gray */
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute;
+    background-color: #6b6b6b; /* Slightly lighter gray */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #a5a58d; /* Light Beige */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #6b6b6b; /* Medium Gray */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #a5a58d; /* Light Beige */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #c8c7a6; /* Even Lighter Beige */
+}
+
+/* Video Section */
+.video-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e0dfdf; /* Light Gray */
+}
+
+.video-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Beige */
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Get Started Section */
+.get-started {
+    background-color: #4b4b4b; /* Charcoal Gray */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.get-started h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #4b4b4b; /* Charcoal Gray */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
