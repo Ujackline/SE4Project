@@ -191,3 +191,177 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #eaeaea;
+}
+
+/* Header */
+header {
+    background-color: #4b4b4b;
+    color: #fff;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img {
+    height: 50px;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul.menu li {
+    margin: 0 15px;
+}
+
+nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+nav ul.menu li a:hover {
+    background-color: #6b6b6b;
+    border-radius: 5px;
+}
+
+/* Why CS Section */
+.why-cs {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.why-cs h1 {
+    color: #4b4b4b;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.why-cs h2 {
+    color: #6b6b6b;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.why-cs p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.why-cs ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.why-cs ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #a5a58d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #c8c7a6;
+}
+
+/* Footer */
+footer {
+    background-color: #4b4b4b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Benefits Section */
+.benefit-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.benefit {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* 3 columns */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit h2 {
+    font-size: 20px;
+    color: #4b4b4b;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.benefit ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefit ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.cta {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #a5a58d;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #c8c7a6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .benefit-row {
+        flex-direction: column;
+    }
+
+    .benefit {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
