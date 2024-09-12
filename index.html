@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>NextGenCS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGenCS - Welcome to Your Future in Computer Science</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <div id="utility_header" role="navigation" aria-label="Utility Navigation"></div>
-            <div id="logo">
-                <a href="index.html">
-                    <img src="logo.png" alt="Next Generation of CS" width="150px" height="300px">
-                </a>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="why_cs.html" class="dropbtn">Why Computer Science?</a>
-                        <div class="dropdown-content">
-                            <a href="why_cs.html">Why CS?</a>
-                            <a href="careers.html">Careers in CS</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="learning.html" class="dropbtn">Learn More</a>
-                        <div class="dropdown-content">
-                            <a href="learning.html">Resources</a>
-                            <a href="preparation.html">Prepare for CS</a>
-                        </div>
-                    </li>
-                    <li><a href="life_as_cs_major.html">Life as a CS Major</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Next Generation of CS" height="50px">
+            </a>
         </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="why_cs.html" class="dropbtn">Why Computer Science?</a>
+                    <div class="dropdown-content">
+                        <a href="why_cs.html">Why CS?</a>
+                        <a href="learning.html">Learn More</a>
+                        <a href="preparation.html">Prepare for CS</a>
+                    </div>
+                </li>
+                <li><a href="careers.html">Careers in CS</a></li>
+                <li><a href="life_as_cs_major.html">Life as a CS Major</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -47,14 +38,18 @@
             <a href="learning.html" class="cta-button">Start Learning</a>
         </section>
 
-        <section class="video-section">
-            <h2>Why Computer Science?</h2>
-            <p>Watch this short video to learn more about why computer science is a great choice for your future.</p>
-            <div class="video-container">
-                <video controls>
-                    <source src="video/why_computer_science.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <section class="slideshow-section">
+            
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/image1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/image2.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/image3.png" style="width:100%">
+                </div>
             </div>
         </section>
 
@@ -83,6 +78,8 @@
             <a href="why_cs.html" class="cta-button">Explore Why CS</a>
         </section>
     </main>
+
+    <script src="scripts.js"></script>
 
 </body>
 </html>
