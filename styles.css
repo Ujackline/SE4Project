@@ -99,6 +99,35 @@ nav ul.menu li a:hover {
     color: #fff;
 }
 
+/* Style for image containers */
+.image-container {
+    text-align: center;
+    margin: 30px auto; /* More margin for better spacing */
+    padding: 10px; /* Adds padding around the image */
+}
+
+/* Individual image styling */
+.image-container img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for images */
+.image-container img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+/* Optional background styling for image sections */
+section .image-container {
+    background: #f7f7f7; /* Light grey background */
+    border-radius: 10px; /* Rounded corners for the background */
+}
+
+
+
 /* Section Content */
 .section-content {
     margin-bottom: 40px;
@@ -117,6 +146,12 @@ nav ul.menu li a:hover {
 .section-content p {
     font-size: 16px;
     color: gray;
+}
+
+a:hover {
+    color: #555;
+    text-decoration: underline;
+    transition: all 0.3s ease;
 }
 
 ul {
