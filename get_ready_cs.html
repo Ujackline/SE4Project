@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get Ready for CS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            position: relative; 
+            overflow: hidden;
+        }
+
+        /* Background image and blinking effect */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            background-image: url('SEIV-picture.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            z-index: -1; 
+            animation: blink 2s infinite; 
+        }
+
+        
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px;
+            color: #fff; 
+        }
+
+        .prep-list {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .prep-list ul {
+            list-style-type: disc; 
+            padding-left: 20px;   
+            margin: 0;             
+        }
+
+        .prep-list li {
+            margin: 5px 0; 
+        }
+
+        p {
+            text-align: left; 
+            margin: 10px 0; 
+            max-width: 800px; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Next Generation of CS">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="get_ready_cs.html">Get Ready for CS</a></li>
+                <li><a href="explore_with_us.html">Explore with Us</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Get Ready for Computer Science</h1>
+            <p>Are you thinking about becoming a Computer Science major? Here are some ways to prepare:</p>
+            <div class="prep-list">
+                <ul>
+                    <li>Build a strong foundation in math and problem-solving skills.</li>
+                    <li>Take coding courses or attend programming workshops.</li>
+                    <li>Get yourself familiar with basic programming languages like Python, Java, JavaScript, HTML, CSS, or C++.</li>
+                    <li>Practice logical thinking through coding challenges and puzzles.</li>
+                    <li>Explore online tutorials and resources to gain hands-on experience.</li>
+                    <li>Believe in yourself and have the passion for being a computer science major.</li>
+                </ul>
+            </div>
+            <p>By taking these steps, you'll be well on your way to excelling in your CS journey!</p>
+        </section>
+    </main>
+</body>
+
+</html>
