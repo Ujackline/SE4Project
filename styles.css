@@ -1,4 +1,3 @@
-
 /* Basic Reset */
 * {
     margin: 0;
@@ -79,6 +78,86 @@ nav ul.menu li a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block; /* Show dropdown on hover */
+}
+
+/* Main Content Container -JoCS */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    background: linear-gradient(to right, #a5a58d, #6b6b6b); /* Gradient background */
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Style for image containers */
+.image-container {
+    text-align: center;
+    margin: 30px auto; /* More margin for better spacing */
+    padding: 10px; /* Adds padding around the image */
+}
+
+/* Individual image styling */
+.image-container img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for images */
+.image-container img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+/* Optional background styling for image sections */
+section .image-container {
+    background: #f7f7f7; /* Light grey background */
+    border-radius: 10px; /* Rounded corners for the background */
+}
+
+
+
+/* Section Content */
+.section-content {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff; /* White background for content areas */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+.section-content p {
+    font-size: 16px;
+    color: gray;
+}
+
+a:hover {
+    color: #555;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
 }
 
 /* Hero Section */
