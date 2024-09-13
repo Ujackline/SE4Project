@@ -9,12 +9,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #eaeaea; /* Light Gray */
+    background-color: #f4f4f4; /* Light Gray */
 }
 
 /* Header and Navigation */
 header {
-    background-color: black; /* Charcoal Gray */
+    background-color: #000; /* Black */
     color: #fff;
     padding: 10px 50px;
     display: flex;
@@ -50,7 +50,7 @@ nav ul.menu li a {
 }
 
 nav ul.menu li a:hover {
-    background-color: #6b6b6b; /* Slightly lighter gray */
+    background-color: #333; /* Slightly lighter gray */
     border-radius: 5px;
 }
 
@@ -58,7 +58,7 @@ nav ul.menu li a:hover {
 .dropdown-content {
     display: none; /* Hide dropdown content by default */
     position: absolute;
-    background-color: #6b6b6b; /* Slightly lighter gray */
+    background-color: #333; /* Slightly lighter gray */
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -73,96 +73,16 @@ nav ul.menu li a:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #a5a58d; /* Light Beige */
+    background-color: #555; /* Darker Gray */
 }
 
 .dropdown:hover .dropdown-content {
     display: block; /* Show dropdown on hover */
 }
 
-/* Main Content Container -JoCS */
-.content {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Section Titles */
-.section-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
-    background: linear-gradient(to right, #a5a58d, #6b6b6b); /* Gradient background */
-    padding: 10px;
-    border-radius: 5px;
-    color: #fff;
-}
-
-/* Style for image containers */
-.image-container {
-    text-align: center;
-    margin: 30px auto; /* More margin for better spacing */
-    padding: 10px; /* Adds padding around the image */
-}
-
-/* Individual image styling */
-.image-container img {
-    max-width: 40%;
-    height: auto;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-/* Hover effect for images */
-.image-container img:hover {
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
-}
-
-/* Optional background styling for image sections */
-section .image-container {
-    background: #f7f7f7; /* Light grey background */
-    border-radius: 10px; /* Rounded corners for the background */
-}
-
-
-
-/* Section Content */
-.section-content {
-    margin-bottom: 40px;
-    padding: 20px;
-    background: #fff; /* White background for content areas */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.section-content h3 {
-    margin-top: 20px;
-    font-size: 22px;
-    color: #333;
-}
-
-.section-content p {
-    font-size: 16px;
-    color: gray;
-}
-
-a:hover {
-    color: #555;
-    text-decoration: underline;
-    transition: all 0.3s ease;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    font-size: 16px;
-}
-
 /* Hero Section */
 .hero {
-    background-color: black; /* Medium Gray */
+    background-color: #000; /* Black */
     color: #fff;
     padding: 50px 20px;
     text-align: center;
@@ -191,118 +111,102 @@ ul {
     background-color: #c8c7a6; /* Even Lighter Beige */
 }
 
-/* About Section */
-.about {
+/* Skills Section */
+.skills {
     padding: 50px 20px;
-    text-align: center;
-    background-color: #f4f4f4; /* Beige */
+    background-color: #fff; /* White */
 }
 
-.about h2 {
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
 }
 
-.features {
+.skill-list {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.feature {
-    background-color: #fff;
+.skill-item {
+    background-color: #fff; /* White */
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
-    flex: 1;
-    border-radius: 5px;
+    width: calc(33% - 20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.feature h3 {
+.skill-item h3 {
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.feature p {
+.skill-item p {
     font-size: 16px;
 }
-
-/* Get Started Section */
-.get-started {
-    background-color: #4b4b4b; /* Charcoal Gray */
-    color: #fff;
+/* Skills Section */
+.skills {
     padding: 50px 20px;
-    text-align: center;
+    background-color: #fff; /* White */
 }
 
-.get-started h2 {
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #fff; /* White */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 16px;
 }
 
 /* Footer */
 footer {
-    background-color: #4b4b4b; /* Charcoal Gray */
+    background-color: #000; /* Black */
     color: #fff;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
 }
-/* Careers Page Styles */
-.careers-hero {
-    background-color: #6b6b6b; /* Medium Gray */
+/* Footer */
+footer {
+    background-color: #000; /* Black */
     color: #fff;
-    padding: 50px 20px;
     text-align: center;
-}
-
-.career-opportunities {
-    padding: 50px 20px;
-    background-color: #f4f4f4; /* Light Beige */
-    text-align: center;
-}
-
-.career-opportunities h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.careers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    padding: 10px 0;
     margin-top: 20px;
-}
-
-.career {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.career h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.career p {
-    font-size: 16px;
-}
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
 }
 
 /* Slideshow Container */
@@ -331,43 +235,6 @@ body {
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-.pathway-image {
-    width: 100px;
-    height: auto;
-    margin: 10px 0;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-
-.pathway-image:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-/* Next and previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
+    from { opacity: .4 }
+    to { opacity: 1 }
 }
