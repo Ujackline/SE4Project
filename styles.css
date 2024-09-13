@@ -89,7 +89,7 @@ nav ul.menu li a:hover {
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -109,29 +109,6 @@ nav ul.menu li a:hover {
 
 .cta-button:hover {
     background-color: #c8c7a6; /* Even Lighter Beige */
-}
-
-/* Video Section */
-.video-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #e0dfdf; /* Light Gray */
-}
-
-.video-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.video-container {
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-video {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
 }
 
 /* About Section */
@@ -276,4 +253,41 @@ body {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.pathway-image {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.pathway-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/* Next and previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
 }
