@@ -22,6 +22,26 @@ header {
     justify-content: space-between;
 }
 
+
+.history-list {
+    display: flex;
+    justify-content: center;
+}
+
+.history-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history-list li {
+    margin: 5px 0;
+}
+
+
 #logo img {
     height: 150px; /* Adjust the size of the logo */
 }
@@ -270,4 +290,141 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+.intro-img {
+    width: 30%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.intro-text {
+    max-width: 60%;
+    text-align: left;
+}
+
+/* Card Section */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.card {
+    background-color: #fff;
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
+}
+
+.careers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.careers-list ul {
+    list-style-type: disc; 
+    padding-left: 20px;   
+    text-align: left;      
+    max-width: 800px;     
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.careers-list li {
+    margin: 5px 0;
+}
+
+
+
+.prep-list {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.prep-list ul {
+    list-style-type: disc; 
+    padding-left: 20px;   
+    margin: 0;             
+}
+
+.prep-list li {
+    margin: 5px 0; 
+}
+
+p {
+    text-align: left; 
+    margin: 10px 0; 
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 20px;
 }
