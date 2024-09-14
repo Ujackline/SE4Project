@@ -1,70 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>History</title>
+    <title>History Of Computer Science</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet -->
-    <style>
-        
-        .history-list {
-            display: flex;
-            justify-content: center;
-        }
-
-        .history-list ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            text-align: left;
-            max-width: 800px; 
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .history-list li {
-            margin: 5px 0;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        .image-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .image-container img {
-            max-width: 100%; 
-            height: auto; 
-            border-radius: 5px; 
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 
 <body>
     <header>
+
         <div id="logo">
             <a href="index.html">
-                <img src="logo.png" alt="Next Generation of CS">
+                <img src="images/logo.png" alt="NextGenCS Logo" height="100px">
             </a>
         </div>
+
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="get_ready_cs.html">Get Ready for CS</a></li>
-                <li><a href="explore_with_us.html">Explore with Us</a></li>
-                <li><a href="history.html">History</a></li>
+               <li><a href="why_cs.html">Why CS?</a></li>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="jobsCS.html" class="dropbtn"> Careers in CS</a>
+                <div class="dropdown-content">
+                    <a href="jobsCS.html"> Work Opportunities</a>
+                    <a href="Salaries.html">Get Paid</a>
+                </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="learning.html"> Learn More</a>
+                    <div class="dropdown-content">
+                        <a href="CSfunfacts.html"> CS Funfacts</a>
+                        <a href="learning.html"> Resources</a>
+                        <a href="get_ready_cs.html">Prepare for CS</a>
+                        <a href="csskills.html"> CS skills</a>
+                    </div>
+
+                </li>
+                <li><a href="Cs_exeperience.html">Life as a CS Major</a></li>
             </ul>
         </nav>
     </header>
@@ -84,9 +60,8 @@
             </div>
         </section>
 
-       
         <div class="image-container">
-            <img src="SEIV-picture2.jpg" alt="Historical Milestone in Computer Science">
+            <img src="images/SEIV-picture.jpg" alt="Historical Milestone in Computer Science">
         </div>
     </main>
 </body>

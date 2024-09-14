@@ -22,6 +22,26 @@ header {
     justify-content: space-between;
 }
 
+
+.history-list {
+    display: flex;
+    justify-content: center;
+}
+
+.history-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history-list li {
+    margin: 5px 0;
+}
+
+
 #logo img {
     height: 150px; /* Adjust the size of the logo */
 }
@@ -359,4 +379,52 @@ a:hover {
 .card-img {
     width: 100px;
     height: 100px;
+}
+
+.careers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.careers-list ul {
+    list-style-type: disc; 
+    padding-left: 20px;   
+    text-align: left;      
+    max-width: 800px;     
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.careers-list li {
+    margin: 5px 0;
+}
+
+
+
+.prep-list {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.prep-list ul {
+    list-style-type: disc; 
+    padding-left: 20px;   
+    margin: 0;             
+}
+
+.prep-list li {
+    margin: 5px 0; 
+}
+
+p {
+    text-align: left; 
+    margin: 10px 0; 
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 20px;
 }
