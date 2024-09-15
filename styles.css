@@ -60,7 +60,7 @@ nav ul.menu li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #000000;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -79,7 +79,7 @@ nav ul.menu li a:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #555;
+    background-color: #000000;
 }
 
 /* Search Icon Styling */
@@ -108,7 +108,7 @@ nav ul.menu li a:hover {
     font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
-    background: linear-gradient(to right, #a5a58d, #6b6b6b);
+    background: linear-gradient(to right, #646463, #565454);
     padding: 10px;
     border-radius: 5px;
     color: #fff;
@@ -143,5 +143,40 @@ nav ul.menu li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #c8c7a6;
+    background-color: #8a8982;
+}
+/* Container for side-by-side sections */
+.combined-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.about {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.slideshow-section {
+    flex: 1;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+.get-started .cta-button {
+    margin-top: 20px; /* Adjust this value as needed */
+    display: inline-block;
 }
