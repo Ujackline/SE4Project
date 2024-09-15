@@ -6,58 +6,14 @@
     <title>Explore with Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet -->
-    <style>
-       
-        .careers-list {
-            display: flex;
-            justify-content: center;
-        }
-
-        .careers-list ul {
-            list-style-type: disc; 
-            padding-left: 20px;   
-            text-align: left;      
-            max-width: 800px;     
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .careers-list li {
-            margin: 5px 0;
-        }
-
-        h1, h2 {
-            color: #333;
-            margin: 0; 
-            padding: 0; 
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px; 
-        }
-
-        h2 {
-            font-size: 1.5em; 
-            margin: 20px 0 10px; 
-        }
-
-        p {
-            text-align: center;
-            margin: 10px 0; 
-        }
-
-        section {
-            padding: 20px;
-        }
-    </style>
+   
 </head>
 
 <body>
     <header>
         <div id="logo">
             <a href="index.html">
-                <img src="logo.png" alt="Next Generation of CS">
+                <img src="images/logo.png" alt="Next Generation of CS">
             </a>
         </div>
         <nav>
@@ -90,7 +46,101 @@
             <p>Explore the opportunities and see where your future can take you!</p>
         </section>
     </main>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            position: relative; 
+            overflow: hidden;
+        }
 
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            background-image: url('images/SEIV-picture.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            z-index: -1; 
+            animation: blink 2s infinite; 
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+
+        nav ul.menu li a:hover {
+           
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-color: rgba(139, 138, 138, 0.862) !important; 
+            color: #fff !important; 
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        p {
+            text-align: center;
+            margin: 10px 0; 
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .careers-list {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .careers-list ul {
+            list-style-type: disc; 
+            padding-left: 20px;   
+            text-align: left;      
+            max-width: 800px;     
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .careers-list li {
+            margin: 5px 0;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </body>
 
 </html>
