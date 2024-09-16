@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History Of Computer Science</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="NextGenCS Logo" height="100px">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="why_cs.html">Why CS?</a></li>
+                <li class="dropdown">
+                    <a href="jobsCS.html" class="dropbtn">Careers in CS</a>
+                    <div class="dropdown-content">
+                        <a href="jobsCS.html">Work Opportunities</a>
+                        <a href="Salaries.html">Get Paid</a>
+                    </div>
+                </li>
+               
+                <li><a href="Cs_exeperience.html">Life as a CS Major</a></li>
+                <li class="dropdown">
+                    <a href="learning.html">Learn More</a>
+                    <div class="dropdown-content">
+                        <a href="history.html">History of CS</a>
+                        <a href="csskills.html">CS Skills</a>
+                        <a href="get_ready_cs.html">Prepare for CS</a>
+                        <a href="learning.html">Resources</a>
+                        <a href="CSfunfacts.html">CS Funfacts</a>
+                    </div>
+                </li>
+            </ul>
+        
+            <div class="search-icon">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>History of Computer Science</h1>
+            <p>Computer Science has grown rapidly and is still growing from its roots in mathematics and electrical engineering.</p>
+            <p> Here are vital milestones in the field:</p>
+            <div class="history-list">
+                <ul>
+                    <li>1940s: Early computers are developed for military and academic purposes.</li>
+                    <li>1960s: The concept of software engineering emerges.</li>
+                    <li>1980s: Personal computers become widely accessible.</li>
+                    <li>2000s: The rise of the internet revolutionizes technology and software.</li>
+                    <li>Today: AI, Machine Learning, and Big Data are shaping the future of CS.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="image-container">
+
+        </div>
+    </main>
+    <style>
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul.menu {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul.menu li {
+            margin: 0 15px;
+        }
+
+
+        nav ul.menu li a:hover {
+            background-color: #6b6b6b !important; 
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-color: rgba(139, 138, 138, 0.862) !important; 
+            color: #fff !important; 
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .history-list {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .history-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            margin: 0;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+ body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            background-image: url('images/SEIV-picture.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            z-index: -1; 
+            animation: blink 2s infinite; 
+        }
+
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</body>
+
+</html>

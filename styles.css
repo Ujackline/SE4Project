@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,29 +5,31 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #eaeaea; /* Light Gray */
+    color: #000000;
+    background-color: #f4f4f4;
 }
 
-/* Header and Navigation */
 header {
-    background-color: #4b4b4b; /* Charcoal Gray */
+    background-color: #000;
     color: #fff;
-    padding: 10px 50px;
+    padding: 5px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #logo img {
-    height: 50px; /* Adjust the size of the logo */
+    height: 100px;
 }
 
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
 }
 
 nav ul.menu {
@@ -38,30 +39,35 @@ nav ul.menu {
 }
 
 nav ul.menu li {
-    position: relative; /* Needed for dropdown positioning */
-    margin: 0 15px; /* Add space between menu items */
+    position: relative;
+    margin: 0 15px;
 }
 
 nav ul.menu li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 5px 10px;
+    background-color: #000;
 }
 
 nav ul.menu li a:hover {
-    background-color: #6b6b6b; /* Slightly lighter gray */
+    background-color: #333;
     border-radius: 5px;
 }
 
-/* Dropdown Menu */
+/* Dropdown Menu Styling */
 .dropdown-content {
-    display: none; /* Hide dropdown content by default */
+    display: none;
     position: absolute;
-    background-color: #6b6b6b; /* Slightly lighter gray */
+    background-color: #000000;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .dropdown-content a {
@@ -73,23 +79,51 @@ nav ul.menu li a:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #a5a58d; /* Light Beige */
+    background-color: #000000;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+/* Search Icon Styling */
+.search-icon {
+    padding: 10px;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #6b6b6b; /* Medium Gray */
+.search-icon a {
     color: #fff;
-    padding: 50px 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.search-icon a:hover {
+    color: #ccc;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Rest of your styles */
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #646463, #565454);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Adjusted Hero Section */
+.hero {
+    background-color: #000000;
+    color: #fff;
+    padding: 2px 30px;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -98,8 +132,9 @@ nav ul.menu li a:hover {
     margin-bottom: 20px;
 }
 
+/* Call to Action Button */
 .cta-button {
-    background-color: #a5a58d; /* Light Beige */
+    background-color: #0d0d0b;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -108,86 +143,103 @@ nav ul.menu li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #c8c7a6; /* Even Lighter Beige */
+    background-color: #8a8982;
 }
-
-/* Video Section */
-.video-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #e0dfdf; /* Light Gray */
-}
-
-.video-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.video-container {
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-video {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* About Section */
-.about {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f4f4f4; /* Beige */
-}
-
-.about h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.features {
+/* Container for side-by-side sections */
+.combined-sections {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    gap: 20px;
-}
-
-.feature {
-    background-color: #fff;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
-    flex: 1;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.feature h3 {
-    font-size: 22px;
+.about {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.slideshow-section {
+    flex: 1;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+.get-started .cta-button {
+    margin-top: 20px; 
+    display: inline-block;
+}
+/* Container for Sections */
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+.hero {
+    background-color: #0f0e0e; 
+    color: #fff;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
-.feature p {
-    font-size: 16px;
-}
-
-/* Get Started Section */
-.get-started {
-    background-color: #4b4b4b; /* Charcoal Gray */
-    color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.get-started h2 {
-    font-size: 28px;
+.hero p {
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    background-color: #4b4b4b; /* Charcoal Gray */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+
+
+
+.section-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Two cards per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.843);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card h3 {
+    font-size: 1.5rem;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+}
+
+.section-card p {
+    font-size: 1rem;
+    color: #dcdcdc;
+}
+
+/* Hover Effects */
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .section-card {
+        width: calc(100% - 20px); /* Full-width cards on smaller screens */
+    }
 }
