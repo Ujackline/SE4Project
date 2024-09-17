@@ -56,7 +56,7 @@ nav ul.menu li a:hover {
     border-radius: 5px;
 }
 
-/* Dropdown Menu Styling */
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -82,7 +82,7 @@ nav ul.menu li a:hover {
     background-color: #000000;
 }
 
-/* Search Icon Styling */
+
 .search-icon {
     padding: 10px;
 }
@@ -145,7 +145,7 @@ nav ul.menu li a:hover {
 .cta-button:hover {
     background-color: #8a8982;
 }
-/* Container for side-by-side sections */
+
 .combined-sections {
     display: flex;
     justify-content: space-between;
@@ -212,7 +212,7 @@ nav ul.menu li a:hover {
 
 
 .section-card {
-    background-color: #837171;
+    background-color: #cecfcc;
     border-radius: 10px;
     padding: 20px;
     width: calc(50% - 20px); /* Two cards per row */
@@ -231,13 +231,13 @@ nav ul.menu li a:hover {
 
 .section-card h3 {
     font-size: 1.5rem;
-    color: #f2f2f2;
+    color: #1a1919;
     margin-bottom: 10px;
 }
 
 .section-card p {
     font-size: 1rem;
-    color: #dcdcdc;
+    color: #0f0d0d;
 }
 
 /* Hover Effects */
