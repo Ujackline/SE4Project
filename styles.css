@@ -28,7 +28,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #000000;
     padding: 10px 20px;
 }
 
@@ -52,7 +52,7 @@ nav ul.menu li a {
 }
 
 nav ul.menu li a:hover {
-    background-color: #333;
+    background-color: #000000;
     border-radius: 5px;
 }
 
@@ -103,7 +103,7 @@ nav ul.menu li a:hover {
     margin: 0 auto;
 }
 
-/* Rest of your styles */
+
 .section-title {
     font-size: 28px;
     margin-bottom: 20px;
@@ -114,7 +114,7 @@ nav ul.menu li a:hover {
     color: #fff;
 }
 
-/* Adjusted Hero Section */
+
 .hero {
     background-color: #000000;
     color: #fff;
@@ -132,7 +132,7 @@ nav ul.menu li a:hover {
     margin-bottom: 20px;
 }
 
-/* Call to Action Button */
+
 .cta-button {
     background-color: #0d0d0b;
     color: #fff;
@@ -212,7 +212,16 @@ nav ul.menu li a:hover {
 
 
 .section-card {
-    background-color: #333;
+    background-color: #959090;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Two cards per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.843);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-cardfacts {
+    background-color: #000000;
     border-radius: 10px;
     padding: 20px;
     width: calc(50% - 20px); /* Two cards per row */
@@ -242,4 +251,29 @@ nav ul.menu li a:hover {
     .section-card {
         width: calc(100% - 20px); /* Full-width cards on smaller screens */
     }
+}
+/* Card Section */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.card {
+    background-color: #b7b7b7;
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
 }
